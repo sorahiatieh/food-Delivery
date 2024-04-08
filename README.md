@@ -4,5 +4,5 @@
 
 ![final](./assets/img/final.png)
 
-![final](./assets/img/final2.png)
+![final2](./assets/img/final2.png)
 
