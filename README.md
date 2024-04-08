@@ -2,7 +2,7 @@
 
 ![commit-activity-branch](https://img.shields.io/github/commit-activity/t/sorahiatieh/food-Delivery/main)
 
-![final](./assets/images/final.png)
+![final](./assets/img/final.png)
 
-![final](./assets/images/final2.png)
+![final](./assets/img/final2.png)
 
