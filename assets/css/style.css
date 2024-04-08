@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: poppins;
+    overflow-x: hidden;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+@font-face {
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/poppins/poppins-bold-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/poppins/poppins-bold-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/poppins/poppins-medium-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/poppins/poppins-semibold-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins/poppins-regular-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/poppins/poppins-light-webfont.woff') format('woff');
+}
+
+:root{
+    --color-red: #C90000;
+    --color--gray: #7D7C7C;
+    --color-black: #504F4F;
+    --color-blur: #323232;
+    --yellow-button: #FFC300;
+    --color-border: #E3E3E3;
+   --color-shadow: #FFF6A3;
+    --color-back-border: #F1F1F1;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+}
+.logo{}
+
+.logo__img{
+    width: 100%;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+.menu__item{
+    gap: 3rem;
+}
+.login-form{
+
+}
+.signin{}
+.lognin{}
