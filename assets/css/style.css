@@ -62,29 +62,23 @@ a{
    --color-shadow: #FFF6A3;
     --color-back-border: #F1F1F1;
 }
-.header{
-    display: flex;
-    justify-content: space-around;
+.main_header{
+    margin-top: 1rem;
+}
+.container_site{
+    max-width: 1170px;
+    margin: 0 auto;
 }
 
 .nav{
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+   grid-template-columns: 58px 510px 187px;
+   justify-content: space-between;
+   align-items: center;
 }
-.logo{}
 
-.logo__img{
-    width: 100%;
-}
-.menu{
+.nav ul{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-.menu__item{
-    gap: 3rem;
-}
-.login-form{
-
-}
-.signin{}
-.lognin{}
