@@ -12,9 +12,11 @@ body{
 ul{
     list-style: none;
 }
+
 a{
     text-decoration: none;
 }
+
 @font-face {
     font-family: poppins;
     font-style: normal;
@@ -57,6 +59,7 @@ a{
     --color--gray: #7D7C7C;
     --color-black: #504F4F;
     --color-blur: #323232;
+    --color-white: #fff;
     --yellow-button: #FFC300;
     --color-border: #E3E3E3;
    --color-shadow: #FFF6A3;
@@ -72,13 +75,51 @@ a{
 
 .nav{
     display: grid;
-   grid-template-columns: 58px 510px 187px;
+   grid-template-columns: 58px 635px 187px;
    justify-content: space-between;
    align-items: center;
 }
 
 .nav ul{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    gap: 2.5rem;
+}
+
+.nav ul li:not(:first-child) a{
+    color:  var(--color--gray);
+    font-weight: 500;
+}
+
+.nav ul li:first-child a{
+    color: var(--color-red);
+    font-weight: 600;
+}
+ 
+.nav ul li a{
+    font-weight: 500;
+}
+
+.link_nav a{
+    border: 1px solid var(--color-red);
+    padding: 9px 16px;
+    font-size: 16px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
+.link_nav a:first-child{
+    color: var(--color-red);
+    font-weight: 300;
+}
+
+.link_nav a:last-child{
+    background-color: var(--color-red);
+    color: var(--color-white);
+    font-weight: 500;
+    margin-left: 8px;
 }
