@@ -71,6 +71,7 @@ a{
 .container_site{
     max-width: 1170px;
     margin: 0 auto;
+    padding: 0 0.5rem;
 }
 
 .nav{
@@ -122,4 +123,69 @@ a{
     color: var(--color-white);
     font-weight: 500;
     margin-left: 8px;
+}
+
+#close_icon{
+    display: none;
+    color: var(--color-black);
+}
+.nav_menu_sidbar{
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: var(--color-white);
+    width: 200px;
+    height: 100%;
+    padding: 1rem;
+    border-right: 2px solid var(--color-black);
+    transform: translateX(-384px);
+    -webkit-transform: translateX(-384px);
+    -moz-transform: translateX(-384px);
+    -ms-transform: translateX(-384px);
+    -o-transform: translateX(-384px);
+    transition: all 250ms ease-out;
+    -webkit-transition: all 250ms ease-out;
+    -moz-transition: all 250ms ease-out;
+    -ms-transition: all 250ms ease-out;
+    -o-transition: all 250ms ease-out;
+}
+
+#input_menu:checked + label + ul{
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+
+#input_menu:checked + label svg:first-child{
+    display: none;
+}
+
+#input_menu:checked + label #close_icon{
+    display: block;
+}
+
+@media (max-width:834px){
+    .nav{
+        grid-template-columns: repeat(3, auto);
+    }
+    .nav > ul{
+        display: none;
+    }
+
+    .link_nav{
+        justify-self: center;
+    }
+
+    .menu_icon{
+        justify-self: flex-end;
+    }
+}
+
+@media (min-width:835px){
+    .menu_icon{
+        display: none;
+    }
 }
