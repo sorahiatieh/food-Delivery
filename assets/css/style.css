@@ -64,6 +64,7 @@ a{
     --color-border: #E3E3E3;
    --color-shadow: #FFF6A3;
     --color-back-border: #F1F1F1;
+    --color-shadow-button: #7090B033;
 }
 .main_header{
     margin-top: 1rem;
@@ -213,4 +214,61 @@ a{
     display: flex;
     justify-content: space-between;
     max-width: 79%;
+    margin-top: 2rem;
+}
+
+.button_action_order{
+    border: 1px solid var(--color-back-border);
+    padding: 8px 16px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    box-shadow: 0px 10px 17px 0px var(--color-shadow-button);
+
+}
+
+.button_action_order span{
+    color: var(--yellow-button);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+
+}
+
+.button_action_order button{
+    border: none;
+    outline: none;
+}
+
+.button_action_order button:first-child{
+    border-right: 1px solid var(--color-back-border);
+}
+
+.button_action_order button:last-child{
+    border-left: 1px solid var(--color-back-border);
+}
+
+.button_action_order button svg{
+    width: 24px;
+    height: 24px;
+}
+
+.action_order > button{
+    padding: 16px 24px 16px 24px;
+    gap: 12px;
+    opacity: 0px;
+    background-color: var(--yellow-button);
+    box-shadow: 0px 20px 20px 0px var(--color-shadow-button);
+    border: none;
+    outline: none;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    display: flex;
+    align-items: center;
 }
