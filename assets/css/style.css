@@ -167,4 +167,50 @@ a{
     display: block;
 }
 
+.header_bottom{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
 
+.content_left{
+    align-self: center;
+}
+
+.content_left h1{
+    color: var(--color-red);
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 76px;
+}
+
+.content_left p{
+    color: var(--color-black);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    max-width: 77%;
+}
+
+.order_food{
+    margin-top: 3rem;
+}
+
+.text_price{
+    color: var(--color-blur);
+}
+
+.text_price span:first-child{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.text_price span:last-child{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.action_order{
+    display: flex;
+    justify-content: space-between;
+    max-width: 79%;
+}
