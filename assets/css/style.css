@@ -66,6 +66,7 @@ a{
     --color-back-border: #F1F1F1;
     --color-shadow-button: #7090B033;
     --color-rgb-241: rgba(241,241,241,0.70);
+    --color-rgb-241-040: rgba(241,241,241,0.40);
     --color-rgb-112: rgba(112,144,176,0.20);
 }
 .main_header{
@@ -293,4 +294,41 @@ a{
 .action_order > button avg{
     margin-top: -3px;
     margin-right: 5px;
+}
+
+.content_right {
+    position: relative;
+}
+
+.fixed_box_delivery{
+    position: absolute;
+    top: 5rem;
+    left: -4rem;
+    border-radius: 50px 50px 0 50px;
+    -webkit-border-radius: 50px 50px 0 50px;
+    -moz-border-radius: 50px 50px 0 50px;
+    -ms-border-radius: 50px 50px 0 50px;
+    -o-border-radius: 50px 50px 0 50px;
+    border: 1px solid var(--color-back-border);
+    background-color: var(--color-rgb-241-040);
+    padding: 12px;
+    text-align: center;
+}
+
+.fixed_box_delivery div{
+    display: flex;
+    align-items: center;
+}
+
+.fixed_box_delivery div span{
+    color: var(--color-blur);
+    font-size: 24px;
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.fixed_box_delivery > span{
+    color: var(--color--gray);
+    font-size: 16px;
+    font-weight: 400;
 }
