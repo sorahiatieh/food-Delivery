@@ -3,66 +3,55 @@
         max-width: 100%;
     }
 }
-
 @media (max-width:882px){
     .header_bottom{
-        margin-top: 2rem;
+       margin-top: 2rem;
     }
     .fixed_box_delivery{
         top: -2rem;
         left: -10rem;
     }
 }
-
 @media (max-width:834px){
-    .nav{
-        grid-template-columns: repeat(3, auto);
+    .navgation{
+        grid-template-columns: repeat(3,auto);
     }
-    .nav > ul{
-        display: none;
-    }
-
-    .link_nav{
-        justify-self: center;
-    }
-
-    .menu_icon{
-        justify-self: flex-end;
-    }
-
-    .content_left h1{
+    .content_left_header_bottom h1{
         font-size: 43px;
         line-height: 50px;
     }
-
-    .order_food{
+    .order_food {
         margin-top: 2rem;
     }
-
     .action_order{
-        gap: 1.5rem;
         justify-content: flex-start;
+        gap: 1.5rem;
     }
-
+    .button_action_order {
+        max-width: 54%;
+        padding: 5px 10px;
+        gap: 2px;
+    }
     .action_order > button{
         padding: 16px;
         font-size: 14px;
     }
-
-    .button_action_order{
-        max-width: 45%;
-        gap: 2px;
-        padding: 5px 10px;
-    }
-
     .fixed_box_delivery{
         padding: 6px;
         top: -1rem;
         left: -5rem;
     }
-
     .fixed_box_delivery div span{
         font-size: 19px;
+    }
+    .navgation > ul{
+        display: none;
+    }
+    .link_navgation{
+        justify-self: center;
+    }
+    .menu_icon{
+        justify-self: flex-end;
     }
 }
 
@@ -71,9 +60,41 @@
         display: none;
     }
 }
-
 @media (max-width:676px){
     .header_bottom{
-        grid-template-columns: repeat(1 ,1fr);
+        grid-template-columns: repeat(1,1fr);
     }
+    .content_left_header_bottom{
+        width: 100%;
+        text-align: center;
+    }
+    .content_left_header_bottom p{
+        max-width: 100%;
+        margin: 1.5rem 0;
+    }
+    .order_food_desktop{
+        display: none;
+    }
+    .order_food_mobile{
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .fixed_box_delivery {
+        position: static;
+        width: 30%;
+    }
+    .action_order > button{
+        padding: 9px;
+    }
+    .action_order > button svg {
+        font-size: 19px;
+        margin-top: -2px;
+    }
+}
+@media (min-width:677px){
+   .order_food_mobile{
+    display: none;
+   }
 }
