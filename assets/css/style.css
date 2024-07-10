@@ -348,22 +348,37 @@ img{
 }
 
 .row_grid_food_products{
+    display: grid;
+    grid-template-columns: repeat(3,370px);
+    gap: 30px;
     margin-top: 32px;
 }
 
 .item_food_grid{
-    width: 300px;
     border: 1px solid var(--color_E3E3E3);
     padding: 16px;
     border-radius: 12px;
+    position: relative;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
     -ms-border-radius: 12px;
     -o-border-radius: 12px;
+   
+}
+
+.badge_discount{
+    position: absolute;
+    width: 48px;
 }
 
 .img_item_food_grid{
     position: relative;
+    text-align: center;
+}
+
+.img_item_food_grid img{
+    max-width: 227px;
+    max-height: 170px;
 }
 
 .img_item_food_grid >div{

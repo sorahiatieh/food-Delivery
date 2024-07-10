@@ -11,6 +11,11 @@
         top: -2rem;
         left: -10rem;
     }
+    .row_grid_food_products{
+        grid-template-columns: repeat(2,370px);
+        gap: 30px;
+    }
+    
 }
 @media (max-width:834px){
     .navgation{
@@ -60,6 +65,7 @@
         display: none;
     }
 }
+
 @media (max-width:676px){
     .header_bottom{
         grid-template-columns: repeat(1,1fr);
@@ -93,6 +99,7 @@
         margin-top: -2px;
     }
 }
+
 @media (min-width:677px){
    .order_food_mobile{
     display: none;
