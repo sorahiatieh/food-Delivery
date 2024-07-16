@@ -418,3 +418,16 @@ img{
    -ms-border-radius: 8px;
    -o-border-radius: 8px;
 }
+
+.see_all_food{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.see_all_food a{
+    color: var(--color_504F4F);
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
