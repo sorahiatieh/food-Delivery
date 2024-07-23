@@ -3,6 +3,31 @@
         max-width: 100%;
     }
 }
+
+@media (max-width:992px){
+   .img_section_mobile_app{
+    grid-row: 2;
+    grid-column: 1 span;
+    margin-top: 4rem;
+   }
+
+   .img_section_mobile_app img{
+    top: -17px;
+   }
+
+   .content_section_mobile_app{
+    grid-column: 2 span;
+   }
+
+   .content_section_mobile_app h4{
+    font-size: 36px;
+   }
+
+   .content_section_mobile_app p{
+    font-size: 15px;
+   }
+}
+
 @media (max-width:882px){
     .header_bottom{
        margin-top: 2rem;
@@ -12,6 +37,7 @@
         left: -10rem;
     }
 }
+
 @media (max-width:834px){
     .navgation{
         grid-template-columns: repeat(3,auto);
@@ -63,6 +89,7 @@
         display: none;
     }
 }
+
 @media (max-width:676px){
     .header_bottom{
         grid-template-columns: repeat(1,1fr);
@@ -95,12 +122,41 @@
         font-size: 19px;
         margin-top: -2px;
     }
+    .section_mobile_app{
+        border-radius: 500px 500px 0 0;
+        max-width: 100%;
+        -webkit-border-radius: 500px 500px 0 0;
+        -moz-border-radius: 500px 500px 0 0;
+        -ms-border-radius: 500px 500px 0 0;
+        -o-border-radius: 500px 500px 0 0;
+    }
+
+    .img_section_mobile_app{
+        justify-self: center;
+        grid-column: 2 span;
+    }
+
+    .img_section_mobile_app img{
+        max-width: 200px;
+        top: -12px;
+    }
+
+    .content_section_mobile_app{
+        margin-top: 6rem;
+        text-align: center;
+    }
+
+    .content_section_mobile_app p{
+        max-width: 100%;
+    } 
 }
+
 @media (min-width:677px){
    .order_food_mobile{
     display: none;
    }
 }
+
 @media (max-width:500px){
     /* .row_grid_food_products{
         grid-template-columns: repeat(1,100%);
