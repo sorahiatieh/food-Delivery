@@ -578,3 +578,39 @@ img{
 .seconde_item_food_off .right_item_food_off img{
     right: 55%;
 }
+
+.section_mobile_app{
+    display: grid;
+    grid-template-columns: 35% 60%;
+    justify-content: flex-end;
+    border: 1px solid var(--color_E3E3E3);
+    background-color: var(--color_F1F1F1);
+    border-radius: 0 500px 500px 0;
+    max-width: 90%;
+    margin-top: 10rem;
+    -webkit-border-radius: 0 500px 500px 0;
+    -moz-border-radius: 0 500px 500px 0;
+    -ms-border-radius: 0 500px 500px 0;
+    -o-border-radius: 0 500px 500px 0;
+}
+
+.img_section_mobile_app img{
+    transform: scale(1.2);
+    position: relative;
+    top: -25px;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+.content_section_mobile_app{
+    padding: 2rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.download_btn_app a{
+    width: 9%;
+    display: inline-block;
+}
