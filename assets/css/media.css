@@ -2,8 +2,15 @@
     .action_order{
         max-width: 100%;
     }
+    .section_search_location img{
+        max-width: 105px;
+    }
 }
-
+@media (max-width:999px){
+    .section_search_location h6{
+        font-size: 45px;
+       }
+}
 @media (max-width:992px){
    .img_section_mobile_app{
     grid-row: 2;
@@ -25,6 +32,10 @@
 
    .content_section_mobile_app p{
     font-size: 15px;
+   }
+
+   .section_search_location h6{
+    font-size: 32px;
    }
 }
 
@@ -82,6 +93,14 @@
     /* .row_grid_food_products{
         grid-template-columns: repeat(2,48%);
     } */
+
+    .section_search_location img{
+        max-width: 74px;
+    }
+
+    .section_search_location form{
+        width: 93%;
+    }
 }
 
 @media (min-width:835px){
@@ -149,6 +168,14 @@
     .content_section_mobile_app p{
         max-width: 100%;
     } 
+
+    .section_search_location h6{
+        font-size: 25px;
+    }
+     
+    .section_search_location p{
+        font-size: 13px;
+    }
 }
 
 @media (min-width:677px){
@@ -157,6 +184,24 @@
    }
 }
 
+@media (max-width:550px){
+    .section_search_location{
+        text-align: center;
+    }
+    .section_search_location img:nth-child(4){
+        top: 7%;
+    }
+
+.section_search_location form{
+    height: 49px;
+}
+.section_search_location form input{
+    font-size: 13px;
+}
+.section_search_location form button{
+    top: 11%;
+}
+}
 @media (max-width:500px){
     /* .row_grid_food_products{
         grid-template-columns: repeat(1,100%);
